@@ -11,12 +11,12 @@ const humidityEl = document.getElementById('humidityEl');
 
 //give a city name, get coordinates
 const getLocation = (city) => {
-    return `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
+    return `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
 };
 
 //give coordinates, make call to current weather api
 const getWeather = (coords) => {
-    return `http://api.openweathermap.org/data/2.5/weather?lat=${coords[0]}&lon=${coords[1]}&appid=${apiKey}`  
+    return `https://api.openweathermap.org/data/2.5/weather?lat=${coords[0]}&lon=${coords[1]}&appid=${apiKey}`  
 };
 
 const updateCard = (data) => {
